@@ -1,0 +1,27 @@
+[
+    {
+        "id": "special?adminpost",
+        "username": "YouBlog",
+        "image": "uploads\/6854a10994c6f.png",
+        "caption": "thanks for visiting my website :)",
+        "hashtags": [],
+        "timestamp": 1750376713,
+        "likes": [
+            "sec"
+        ],
+        "comments": [
+            {
+                "id": "6855c73040a1a",
+                "username": "Unknown",
+                "text": "hello world",
+                "timestamp": 1750452016
+            },
+            {
+                "id": "6855d2bb40050",
+                "username": "YouBlog",
+                "text": "thanks bro",
+                "timestamp": 1750454971
+            }
+        ]
+    }
+]

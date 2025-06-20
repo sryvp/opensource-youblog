@@ -1,0 +1,465 @@
+/* SimpleChan Theme Colors */
+:root {
+    --bg-color: #eef2ff;
+    --header-bg: #d6daf0;
+    --border-color: #b7c5d9;
+    --text-color: #34345c;
+    --highlight-color: #c40000;
+    --logo-color: #000000;
+    --button-bg: #d6daf0;
+    --error-color: #ff3333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    cursor: url("assets/cursor.png") , auto;
+}
+
+header {
+    background-color: #d6daf081;
+    padding: 0.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    color: var(--logo-color);
+}
+
+.logo img {
+    width: 216px;
+    height: 90px;
+}
+
+.search {
+   display: flex;
+   width: 25%;
+}
+
+.search input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-right: none;
+}
+
+.search button {
+    padding: 0.5rem 1rem;
+    background-color: #f8f8f8;
+    border : 1px solid #ddd;
+    cursor: url("assets/cursor.png") , auto;
+}
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--highlight-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.post {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.post-user {
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.post-user:hover {
+    color: var(--highlight-color);
+}
+
+.post-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-caption {
+    padding: 1rem;
+    white-space: pre-line;
+}
+
+.post-tags {
+    margin-top: 0.5rem;
+}
+
+.hashtag {
+    color: var(--highlight-color);
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.post-actions {
+    padding: 0 1rem 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.like-form button, .comment-btn {
+    background: none;
+    border: none;
+    cursor: url("assets/cursor.png") , auto;
+    color: var(--text-color);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.post-comments {
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.comment {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.comment-user {
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.comment-user:hover {
+    color: var(--highlight-color);
+}
+
+.comment-date {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.comment-form {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.comment-form input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px 0 0 4px;
+}
+
+.comment-form button {
+    padding: 0 1rem;
+    background-color: var(--highlight-color);
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: url("assets/cursor.png") , auto;
+}
+
+.auth-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.auth-box {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.auth-box h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.auth-box input {
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.auth-box button {
+    padding: 0.75rem;
+    background-color: var(--highlight-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: url("assets/cursor.png") , auto;
+    font-weight: bold;
+}
+
+.auth-box a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+.error {
+    color: var(--error-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.profile-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.profile-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid transparent;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-bio {
+    margin: 1rem 0;
+    white-space: pre-line;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.profile-stats span {
+    font-weight: bold;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.new-post {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea, 
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.new-post button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--highlight-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: url("assets/cursor.png") , auto;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--header-bg);
+    border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    
+    .search {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile-stats {
+        justify-content: center;
+    }
+}
+/* Video Player Styles */
+.video-container {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.video-player {
+    background-color: #000;
+}
+
+.video-player video {
+    width: 100%;
+    display: block;
+}
+
+.video-info {
+    padding: 1.5rem;
+}
+
+.video-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    color: #666;
+}
+
+.post-media {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    background-color: #000;
+}
+
+.post-media.video {
+    cursor: pointer;
+}
+/* Tag Styles */
+.hashtag {
+    color: #1DA1F2; /* Twitter-like blue */
+    text-decoration: none;
+}
+
+.mention {
+    color: #1DA1F2; /* Same blue for consistency */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hashtag:hover, .mention:hover {
+    text-decoration: underline;
+}
+/* Logo Link Styles */
+.logo-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    display: flex; /* Maintain layout */
+    align-items: center; /* Center vertically */
+}
+
+.logo-link:hover .logo {
+    opacity: 0.8; /* Optional hover effect */
+}
+
+/* If you want the logo text to change color on hover */
+.logo-link:hover .logo span {
+    color: var(--highlight-color); /* Use your theme's highlight color */
+}
