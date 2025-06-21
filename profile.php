@@ -29,14 +29,13 @@ $userPosts = getPostsByUser($profileUser['username']);
 </a>
             <div class="search">
                 <form action="index.php" method="get">
-                    <input type="text" name="q" placeholder="Search @users or #tags">
+                    <input type="text" name="q" placeholder="Search">
                     <button type="submit">🔍</button>
                 </form>
             </div>
             <nav>
                 <?php if (isLoggedIn()): ?>
                     <a href="post.php">New Post</a>
-                    <a href="profile.php?user=<?= $_SESSION['user']['username'] ?>">Profile</a>
                     <a href="profile-setup.php" class="settings-btn">Set-up profile</a>
                     <a href="logout.php">Logout</a>
                 <?php else: ?>
