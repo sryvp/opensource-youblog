@@ -18,7 +18,7 @@
 </a>
             <div class="search">
                 <form action="index.php" method="get">
-                    <input type="text" name="q" placeholder="Search @users or #tags" value="<?= $_GET['q'] ?? '' ?>">
+                    <input type="text" name="q" placeholder="Search" value="<?= $_GET['q'] ?? '' ?>">
                     <button type="submit">🔍</button>
                 </form>
             </div>
